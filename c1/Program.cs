@@ -24,17 +24,15 @@ namespace c1
         public static void Main(string[] args)
         {
             Punkt punkt = new Punkt();
-            Punkt pomocniczyPunkt;
-            pomocniczyPunkt = punkt.pobierzWspolrzedne();
 
             Console.WriteLine("Przed ustawieniem wartości:");
-            Console.WriteLine("Wspułżędna X = " + pomocniczyPunkt.x);
-            Console.WriteLine("Wspułżędna Y = " + pomocniczyPunkt.y);
+            Console.WriteLine("Wspułżędna X = " + punkt.pobierzWspolrzedne().x);
+            Console.WriteLine("Wspułżędna Y = " + punkt.pobierzWspolrzedne().y);
 
             punkt.ustawWspulrzendne(1, 2);
-            pomocniczyPunkt = punkt.pobierzWspolrzedne();
-
-
+            Console.WriteLine("\nPo ustawieniu wartości: ");
+            Console.WriteLine("Wspułrzendna X = " + punkt.pobierzWspolrzedne().x);
+            Console.WriteLine("Wspułrzendna Y = " + punkt.pobierzWspolrzedne().y);
 
 
 
