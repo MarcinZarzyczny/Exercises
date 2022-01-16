@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cwiczenia\\c1\\c1.csproj",
+      "projectUniqueName": "D:\\C#_exercises\\c1\\c1.csproj",
       "projectName": "c1",
-      "projectPath": "D:\\Cwiczenia\\c1\\c1.csproj",
+      "projectPath": "D:\\C#_exercises\\c1\\c1.csproj",
       "packagesPath": "C:\\Users\\kanan\\.nuget\\packages\\",
-      "outputPath": "D:\\Cwiczenia\\c1\\obj\\",
+      "outputPath": "D:\\C#_exercises\\c1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
