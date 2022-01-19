@@ -17,10 +17,11 @@ D:\C#_exercises\c1\bin\Debug\netcoreapp3.1\c1.runtimeconfig.json
 D:\C#_exercises\c1\bin\Debug\netcoreapp3.1\c1.runtimeconfig.dev.json
 D:\C#_exercises\c1\bin\Debug\netcoreapp3.1\c1.dll
 D:\C#_exercises\c1\bin\Debug\netcoreapp3.1\c1.pdb
-D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.csprojAssemblyReference.cache
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.AssemblyInfoInputs.cache
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.AssemblyInfo.cs
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.csproj.CoreCompileInputs.cache
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.dll
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.pdb
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.genruntimeconfig.cache
+D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.csproj.AssemblyReference.cache
+D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.GeneratedMSBuildEditorConfig.editorconfig
