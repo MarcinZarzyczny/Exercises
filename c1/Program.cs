@@ -3,66 +3,83 @@
 namespace c1
 {
     public class Punkt {
-        private double modul, sinalfa;
+        private int x, y;
         public Punkt()
         {
-            modul = Math.Sqrt(Math.Pow(800, 2) + Math.Pow(600, 2));
-            sinalfa = (double)600 / modul;
+            this.x = 4;
+            this.y = 7;
 
         }
         public Punkt(int x, int y)
         {
-            ustawWspulrzedne(x, y);
+            UstawWspulrzedne(x, y);
 
         }
-        public void ustawWspulrzedne(int x, int y) {
-            modul = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
-            sinalfa = (double)y / modul;
+        public void UstawWspulrzedne(int x, int y) {
+            this.x = x;
+            this.y = y;
         }
-        public Punkt pobierzWspulrzedne() {
+        public Punkt PobierzWspulrzedne() {
             Punkt punkt = new Punkt();
-            punkt.sinalfa = sinalfa;
-            punkt.modul = modul;
+            punkt.x = x;
+            punkt.y = y;
             return punkt;
         }
-        public void pobierzWspulrzedne(Punkt punkt)
+        public void PobierzWspulrzedne(Punkt punkt)
         {
-            punkt.sinalfa = sinalfa;
-            punkt.modul = modul;
+            punkt.x = x;
+            punkt.y = y;
 
         }
-        public void ustawX(int wspyX) {
-            ustawWspulrzedne(wspyX, pobierzY());
+        public void UstawX(int wspyX) {
+            UstawWspulrzedne(wspyX, PobierzY());
         }
-        public void ustawY(int wspY)
+        public void UstawY(int wspY)
         {
-            ustawWspulrzedne(pobierzX(), wspY);
+            UstawWspulrzedne(PobierzX(), wspY);
         }
-        public int pobierzX() {
-            double x;
-            x = modul * Math.Sqrt(1 - Math.Pow(sinalfa, 2));
-            return (int)Math.Round(x);
+        public int PobierzX() {
+           
+            return (this.x);
         }
-        public int pobierzY()
+        public int PobierzY()
         {
-            double y;
-            y = modul * sinalfa;
-            return (int)Math.Round(y);
+            return this.y;
         }
-
     }
+    public class KolorowyPunkt : Punkt
+    {
+        protected int kolor;
+        public KolorowyPunkt()
+        {
+            this.kolor = 0;
+
+        }
+        public KolorowyPunkt(int wspX, int wspY, int nowyKolor)
+        {
+            UstawWspulrzedne(wspX, wspY);
+            this.kolor = nowyKolor;
+
+        }
+        public int PobierzKolor() {
+            return (this.kolor);
+        }
+    }
+
     class Program
     {
         public static void Main(string[] args)
         {
             Punkt punkt = new Punkt();
             Console.WriteLine(punkt);
-            Console.WriteLine("Pubkt X: " + punkt.pobierzX());
-            Console.WriteLine("Pubkt Y: " + punkt.pobierzY());
+            Console.WriteLine("Pubkt X: " + punkt.PobierzX());
+            Console.WriteLine("Pubkt Y: " + punkt.PobierzY());
 
-            Punkt punkt1 = new Punkt(100, 200);
-            Console.WriteLine("Pubkt X: " + punkt1.pobierzX());
-            Console.WriteLine("Pubkt Y: " + punkt1.pobierzY());
+            KolorowyPunkt kolorowyPunkt = new KolorowyPunkt(100, 200, 155678);
+            Console.WriteLine("Kolorowy pubkt X: " + kolorowyPunkt.PobierzX());
+            Console.WriteLine("Kolorowy pubkt Y: " + kolorowyPunkt.PobierzY());
+            Console.WriteLine("Kolor punktu: " + kolorowyPunkt.PobierzKolor());
+
 
 
 
