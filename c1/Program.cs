@@ -6,9 +6,10 @@ namespace c1
     {
         public static void Main(string[] args)
         {
-            int[] tablica = new int[1];
-            tablica[0] = 11;
-            Console.WriteLine("Pierwszy elament tablicy ma wartość: " + tablica[0]);
+            int[] tablica = { 1, 2, 3, 3, 5 };
+            for (int i = 0; i < tablica.Length; i++) {
+                Console.WriteLine("tablica[{0}] = {1}", i, tablica[i]);
+            }
         }
     }
 }
