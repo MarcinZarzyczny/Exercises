@@ -6,9 +6,9 @@ namespace c1
     {
         public static void Main(string[] args)
         {
-            int[] tablica = { 1, 2, 3, 3, 5 };
-            for (int i = 0; i < tablica.Length; i++) {
-                Console.WriteLine("tablica[{0}] = {1}", i, tablica[i]);
+            int[] tablica = { 1, 2, 3, 4, 5 };
+            foreach(int i in tablica) {
+                Console.WriteLine(i);
             }
         }
     }
