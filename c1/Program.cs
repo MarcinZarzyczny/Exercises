@@ -6,25 +6,27 @@ namespace c1
     {
         public static void Main(string[] args)
         {
-            int[][] tablica = new int[4][];
-            tablica[0] = new int[4] { 1, 2, 3, 4 };
-            tablica[1] = new int[2] { 5, 6 };
-            tablica[2] = new int[3] { 7, 8, 9 };
-            tablica[3] = new int[1] { 10 };
 
-
-            for (int i = 0; i < tablica.Length; i++)
-            {
-                Console.Write("tablica [{0}] = ", i);
-                for (int j = 0; j < tablica[i].Length; j++)
-                {
-                    Console.WriteLine("[{0}]", tablica[i][j]);
-                }
-                Console.WriteLine("");
+            Tablica tab = new Tablica();
+            try{
+                int value = tab.getElement(20);
+                Console.WriteLine("Element nr 20 ma wartosc: " + value);
             }
-
-            
-
+            catch(IndexOutOfRangeException){ 
+                Console.WriteLine("Nie ma elementu o podanym numerze.");
+            }
+        }
+    }
+    public class Tablica
+    {
+        int[] tab;
+        public Tablica()
+        {
+            tab = new int[5];
+        }
+        public int getElement(int index)
+        {    
+            return tab[index];  
         }
     }
 }
