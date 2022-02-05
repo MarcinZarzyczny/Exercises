@@ -6,22 +6,17 @@ namespace c1
     {
         public static void Main(string[] args)
         {
-
+            int index = 1;
             Tablica tab = new Tablica();
             try
             {
-                int value = tab.getElement(20);
-                Console.WriteLine("Element nr 20 ma wartosc: " + value);
+                int value = tab.getElement(index);
+                Console.WriteLine("Element nr {0} ma wartosc: " + value, index);
             }
             catch (IndexOutOfRangeException)
             {
-                Console.WriteLine("Wyjątek IndexOutOfRangeException");
-            }
-            catch (SystemException)
-            {
-                Console.WriteLine("Wyjątek SystemException.");
-            }
-            
+                Console.WriteLine("Nie ma elementu o indeksie {0}! ", index);
+            }            
         }
     }
     public class Tablica
