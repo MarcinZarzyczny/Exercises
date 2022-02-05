@@ -12,8 +12,10 @@ namespace c1
                 int value = tab.getElement(20);
                 Console.WriteLine("Element nr 20 ma wartosc: " + value);
             }
-            catch(IndexOutOfRangeException){ 
-                Console.WriteLine("Nie ma elementu o podanym numerze.");
+            catch(IndexOutOfRangeException e ){
+                Console.WriteLine("Nie ma elementu o podanym numerze!");
+                Console.WriteLine("Komunikat 1: \n" + e.ToString());
+                Console.WriteLine("Komunikat 2: \n" + e.Message);
             }
         }
     }
