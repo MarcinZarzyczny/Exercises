@@ -8,15 +8,20 @@ namespace c1
         {
 
             Tablica tab = new Tablica();
-            try{
+            try
+            {
                 int value = tab.getElement(20);
                 Console.WriteLine("Element nr 20 ma wartosc: " + value);
             }
-            catch(IndexOutOfRangeException e ){
-                Console.WriteLine("Nie ma elementu o podanym numerze!");
-                Console.WriteLine("Komunikat 1: \n" + e.ToString());
-                Console.WriteLine("Komunikat 2: \n" + e.Message);
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine("Wyjątek IndexOutOfRangeException");
             }
+            catch (SystemException)
+            {
+                Console.WriteLine("Wyjątek SystemException.");
+            }
+            
         }
     }
     public class Tablica
