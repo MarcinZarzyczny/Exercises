@@ -6,29 +6,24 @@ namespace c1
     {
         public static void Main(string[] args)
         {
-            int index = 1;
-            Tablica tab = new Tablica();
-            try
-            {
-                int value = tab.getElement(index);
-                Console.WriteLine("Element nr {0} ma wartosc: " + value, index);
-            }
-            catch (IndexOutOfRangeException)
-            {
-                Console.WriteLine("Nie ma elementu o indeksie {0}! ", index);
-            }            
+            Point Punkt = new Point();
+            Punkt.x = 100;
+            Punkt.y = 100;
+            Punkt.Show();
         }
     }
-    public class Tablica
+    interface IShow {
+        void Show();  
+    }
+    public class Point:IShow
     {
-        int[] tab;
-        public Tablica()
-        {
-            tab = new int[5];
+        public int x;
+        public int y;
+        public void Show() {
+            Console.WriteLine("Dane dotyczą punktu: \n");
+            Console.WriteLine("Współrzędna x = {0}", x);
+            Console.WriteLine("Współrzędna y = {0}", y);
         }
-        public int getElement(int index)
-        {    
-            return tab[index];  
-        }
+       
     }
 }
