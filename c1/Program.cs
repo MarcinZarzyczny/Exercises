@@ -22,12 +22,9 @@ namespace c1
             tab[3] = punkt2;
             tab[4] = punkt3;
             for(int index = 0; index < tab.Length; index++){
-                try
-                {
-                    ((IShow)tab[index]).Show();
-                }
-                catch (InvalidCastException) { 
-                }
+                if (tab[index] is IShow) {
+                    tab[index].Show();
+                } 
 
             }
 
