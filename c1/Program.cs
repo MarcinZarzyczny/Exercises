@@ -27,7 +27,10 @@ namespace c1
     }
     public class Shape {
         public int color;
-    
+        public virtual void Show(){
+            Console.WriteLine("Metoda Show klasy bazowej.");
+        
+        }
     }
     public class Rectangle: Shape, IShow {
         public int x;
@@ -40,7 +43,7 @@ namespace c1
             this.width = width;
             this.height = height;
         }
-        public void Show() {
+        public override void Show() {
             Console.Write("\nParametry prostokąta");
             Console.Write("\nwspółrzędna x = {0}", x);
             Console.Write("\nwspółrzędna y = {0}", y);
@@ -58,7 +61,7 @@ namespace c1
             this.b = b;
             this.c = c;
         }
-        public void Show()
+        public override void Show()
         {
             Console.Write("\nParametry trójkąta");
             Console.Write("\npunkt a  = ({0}, {1})", a.x , a.y);
@@ -68,15 +71,20 @@ namespace c1
         }
     }
     public class Point:Shape, IShow {
+        public static int liczbaObiektow;
+        private int id;
         public int x;
         public int y;
 
         public Point(int x, int y){
             this.x = x;
             this.y = y;
+            liczbaObiektow++;
+            this.id = liczbaObiektow;
         }
-        public void Show(){
-            Console.Write("punkt:\n x = {0}, y = {1}\n", this.x, this.y); ;
+        public override void Show()
+        {
+            Console.Write("punkt {2}:\n x = {0}, y = {1}\n", this.x, this.y, this.id);
         }
     }
 }
