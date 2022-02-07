@@ -9,16 +9,28 @@ namespace c1
 
            
 
-            Rectangle prostokant = new Rectangle(100, 200, 50, 50);
+            Rectangle prostokat = new Rectangle(100, 200, 50, 50);
             Point punkt1 = new Point(10, 20);
             Point punkt2 = new Point(15, 18);
             Point punkt3 = new Point(42, 24);
-            Triangle trojkant = new Triangle(punkt1, punkt2, punkt3);
-            prostokant.Show();
-            trojkant.Show();
-            punkt1.Show();
-            punkt2.Show();
-            punkt3.Show();
+            Triangle trojkat = new Triangle(punkt1, punkt2, punkt3);
+         
+            Shape[] tab = new Shape[5];
+            tab[0] = prostokat;
+            tab[1] = trojkat;
+            tab[2] = punkt1;
+            tab[3] = punkt2;
+            tab[4] = punkt3;
+            for(int index = 0; index < tab.Length; index++){
+                try
+                {
+                    ((IShow)tab[index]).Show();
+                }
+                catch (InvalidCastException) { 
+                }
+
+            }
+
         }
     }
 
