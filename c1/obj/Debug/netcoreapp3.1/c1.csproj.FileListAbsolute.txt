@@ -25,3 +25,17 @@ D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.pdb
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.genruntimeconfig.cache
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.csproj.AssemblyReference.cache
 D:\C#_exercises\c1\obj\Debug\netcoreapp3.1\c1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projekty\Exercises\c1\bin\Debug\netcoreapp3.1\c1.exe
+F:\Projekty\Exercises\c1\bin\Debug\netcoreapp3.1\c1.deps.json
+F:\Projekty\Exercises\c1\bin\Debug\netcoreapp3.1\c1.runtimeconfig.json
+F:\Projekty\Exercises\c1\bin\Debug\netcoreapp3.1\c1.runtimeconfig.dev.json
+F:\Projekty\Exercises\c1\bin\Debug\netcoreapp3.1\c1.dll
+F:\Projekty\Exercises\c1\bin\Debug\netcoreapp3.1\c1.pdb
+F:\Projekty\Exercises\c1\obj\Debug\netcoreapp3.1\c1.csproj.AssemblyReference.cache
+F:\Projekty\Exercises\c1\obj\Debug\netcoreapp3.1\c1.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projekty\Exercises\c1\obj\Debug\netcoreapp3.1\c1.AssemblyInfoInputs.cache
+F:\Projekty\Exercises\c1\obj\Debug\netcoreapp3.1\c1.AssemblyInfo.cs
+F:\Projekty\Exercises\c1\obj\Debug\netcoreapp3.1\c1.csproj.CoreCompileInputs.cache
+F:\Projekty\Exercises\c1\obj\Debug\netcoreapp3.1\c1.dll
+F:\Projekty\Exercises\c1\obj\Debug\netcoreapp3.1\c1.pdb
+F:\Projekty\Exercises\c1\obj\Debug\netcoreapp3.1\c1.genruntimeconfig.cache

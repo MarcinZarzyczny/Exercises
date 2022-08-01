@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "dNJxPo6BJz0VdPYDMC5hSCIvKr+B1YakLDZ1kiLM0QT8SrQVxnYu6lrGSTm0Rixya6qZGU1uXHaReQkMic+5Ug==",
+  "dgSpecHash": "XR9Bo8mTos4y9ucewFUa2LorXd+zO4ouTN1UCKV51tDhfLrAt9EphYgTfvqQaGwHF6E9xmzYseAFef6LHJbL3Q==",
   "success": true,
-  "projectFilePath": "D:\\C#_exercises\\c1\\c1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\Projekty\\Exercises\\c1\\c1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kanan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.23\\microsoft.netcore.app.host.win-x64.3.1.23.nupkg.sha512",
+    "C:\\Users\\kanan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\kanan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\kanan\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
